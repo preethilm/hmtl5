@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of CSS3 Properties" keywords="HTML5,Stucture, CSS3"/>
+<title>CSS3 Example</title>
+<style>
+#grad1 {
+	background: -webkit-radial-gradient(red, green, yellow); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(red, green, yellow); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(red, green, yellow); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(red, green, yellow); /* Standard syntax */
+}
+#grad2 {
+	background: -webkit-radial-gradient(red 10%, green 15%, yellow 60%); /* Safari 5.1-6.0 */
+	background: -o-radial-gradient(red 10%, green 15%, yellow 60%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(red 10%, green 15%, yellow 60%); /* For Firefox 3.6-15 */
+	background: radial-gradient(red 10%, green 15%, yellow 60%); /* Standard syntax */
+}
+#grad3 {
+  background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
+  background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, red, yellow, green); /* Standard syntax */
+}
+#grad4 {
+	// the first parameter indicates the center of the gradient
+	// the gradient's center lies at 30% of the box's width horizontally
+    // the gradient's center lies at 25% of the height vertically
+	
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(30% 25%, closest-side,red,green,yellow,black); 
+  /* For Opera 11.6 to 12.0 */
+  background: -o-radial-gradient(30% 25%, closest-side,red,green,yellow,black);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-radial-gradient(30% 25%, closest-side,red,green,yellow,black);
+  /* Standard syntax */
+  background: radial-gradient(closest-side at 30% 25%,red,green,yellow,black);
+}
+
+#grad5 {
+	// the first parameter indicates the center of the gradient
+	// the gradient's center lies at 30% of the box's width horizontally
+    // the gradient's center lies at 25% of the height vertically
+	
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(30% 25%, farthest-side,red,green,yellow,black);
+  /* Opera 11.6 to 12.0 */ 
+  background: -o-radial-gradient(30% 25%, farthest-side,red,green,yellow,black);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-radial-gradient(30% 25%, farthest-side,red,green,yellow,black);
+  /* Standard syntax */
+  background: radial-gradient(farthest-side at 30% 25%,red,green,yellow,black);
+}
+#grad6 {
+	// the first parameter indicates the center of the gradient
+	// the gradient's center lies at 30% of the box's width horizontally
+    // the gradient's center lies at 25% of the height vertically
+	
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(30% 25%, closest-corner,blue,green,yellow,black); 
+  /* For Opera 11.6 to 12.0 */
+  background: -o-radial-gradient(30% 25%, closest-corner,blue,green,yellow,black);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-radial-gradient(30% 25%, closest-corner,blue,green,yellow,black);
+  /* Standard syntax */
+  background: radial-gradient(closest-corner at 30% 25%,blue,green,yellow,black);
+}
+
+#grad7 {
+	// the first parameter indicates the center of the gradient
+	// the gradient's center lies at 30% of the box's width horizontally
+    // the gradient's center lies at 25% of the height vertically
+	
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(30% 25%, farthest-corner,blue,green,yellow,black);
+  /* Opera 11.6 to 12.0 */ 
+  background: -o-radial-gradient(30% 25%, farthest-corner,blue,green,yellow,black);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-radial-gradient(30% 25%, farthest-corner,blue,green,yellow,black);
+  /* Standard syntax */
+  background: radial-gradient(farthest-corner at 30% 25%,blue,green,yellow,black);
+}
+</style>
+</head>
+<body>
+	<pre>Radial Gradient : Evenly spaced color-stops (default)</pre>
+	<div id="grad1" style="width:150px;height:100px"></div>
+	<br/>
+	<pre>Radial Gradient : Differently spaced color-stops </pre>
+	<div id="grad2" style="width:150px;height:100px"></div>
+	<br/>
+	<pre>Radial Gradient : Shape - circle </pre>
+	<div id="grad3" style="width:150px;height:100px"></div>
+	<br/>
+	<pre>Radial Gradient : Position - closest side </pre>
+	<div id="grad4" style="height:100px;width:150px"></div>
+	<br/>
+	<pre>Radial Gradient : Position - farthest side </pre>
+	<div id="grad5" style="height:100px;width:150px"></div>
+	<br/>
+	<pre>Radial Gradient : Position - closest corner </pre>
+	<div id="grad6" style="height:100px;width:150px"></div>
+	<br/>
+	<pre>Radial Gradient : Position - farthest corner </pre>
+	<div id="grad7" style="height:100px;width:150px"></div>
+</body>
+</html>

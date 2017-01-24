@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of CSS3 Properties" keywords="HTML5,Stucture, CSS3"/>
+<title>CSS3 calc() Example</title>
+<style>
+.formbox {
+	width: calc(100% / 6 - 5px); 
+  	float:left;
+  	text-align:center;
+	border: 1px solid #000;
+}
+div.formbox:nth-of-type(even){
+	background-color: teal;
+}
+div.formbox:nth-of-type(odd){
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+		<div class="formbox">Box 1</div>
+		<div class="formbox">Box 2</div>
+		<div class="formbox">Box 3</div>
+		<div class="formbox">Box 4</div>
+		<div class="formbox">Box 5</div>
+		<div class="formbox">Box 6</div>
+
+</body>
+</html>

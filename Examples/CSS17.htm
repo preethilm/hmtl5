@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of CSS3 Properties" keywords="HTML5,Stucture, CSS3"/>
+<title>CSS3 @font-face Example</title>
+<style>
+@font-face {
+	font-family:'Myfont';
+	src: url('Amble-Regular.ttf');
+}
+@font-face {
+	font-family:'Myfont';
+	src: url('Amble-Bold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family:'Myfont';
+	src: url('Amble-LightItalic.ttf');
+	font-style: italic;
+}
+div{
+	font-family:'Myfont','Serif';
+	font-size: 18pt;
+}
+
+// the following section is to be used for comprehensive coverage across clients
+
+// @font-face {
+//  font-family: 'Tagesschrift';
+//  src: url('tagesschrift.eot'); /* IE 5-8 */ 
+//  src: local('☺'),             /* sneakily trick IE */
+//        url('tagesschrift.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+//        url('tagesschrift.ttf') format('truetype'), /* Opera, Safari */
+//        url('tagesschrift.svg#font') format('svg'); /* iOS */
+//	}
+
+
+</style>
+</head>
+<body>
+	<div id="grad1" style="width:400px;height:100px">
+		This is making <b>use</b> of my <i>font</i>!!
+	</div>
+	<br/>
+	
+	
+</body>
+</html>
